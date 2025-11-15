@@ -4,7 +4,7 @@ import "bootstrap/dist/js/bootstrap.bundle.min.js";
 import "./index.css";
 import "./theme.css"; // ✅ must come last
 import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
-import gabe from "./assets/gabe.jpg";
+import gabe from "./assets/gabe.png";
 import Skills from "./Skills";
 import Projects from "./Projects";
 import Contact from "./Contact";
