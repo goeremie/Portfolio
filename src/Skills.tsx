@@ -83,7 +83,7 @@ const SkillsAndResume: React.FC = () => {
 
           <a
             className="resume-btn"
-            href="/resume.pdf"
+            href="/Gabriel_Eremie_Resume.pdf"
             target="_blank"
             rel="noopener noreferrer"
             download
