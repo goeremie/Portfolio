@@ -1,4 +1,4 @@
-
+import ArrowIcon from '../components/ArrowIcon';
 import { useState, type ChangeEvent, type FormEvent } from 'react';
 
 type ContactForm = {
@@ -74,7 +74,7 @@ export default function Contact() {
           className="contact-email"
           href="mailto:gabriel.eremie@yahoo.com"
         >
-          gabriel.eremie@yahoo.com ↗
+          gabriel.eremie@yahoo.com <ArrowIcon />
         </a>
       </div>
 
@@ -135,7 +135,7 @@ export default function Contact() {
           className="button button-primary"
           type="submit"
         >
-          Open email draft <span>↗</span>
+          Open email draft <span><ArrowIcon /></span>
         </button>
 
         {sent && (

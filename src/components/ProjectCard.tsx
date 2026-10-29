@@ -1,6 +1,7 @@
 
 import { Link } from 'react-router-dom';
 import type { Project } from '../data/projects';
+import ArrowIcon from './ArrowIcon';
 
 type Props = {
   project: Project;
@@ -40,7 +41,7 @@ export default function ProjectCard({ project }: Props) {
           </span>
 
           <span className="image-arrow" aria-hidden="true">
-            ↗
+            <ArrowIcon />
           </span>
         </div>
       </Link>
@@ -62,7 +63,7 @@ export default function ProjectCard({ project }: Props) {
         className="text-link"
         to={`/work/${project.slug}`}
       >
-        Explore project <span aria-hidden="true">↗</span>
+        Explore project <span aria-hidden="true"><ArrowIcon /></span>
       </Link>
     </article>
   );

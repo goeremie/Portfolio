@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import ProjectCard from '../components/ProjectCard';
 import SectionHeading from '../components/SectionHeading';
 import { projects } from '../data/projects';
+import ArrowIcon from '../components/ArrowIcon';
 
 export default function Home() {
   return (
@@ -30,7 +31,7 @@ export default function Home() {
 
           <div className="hero-actions">
             <Link className="button button-primary" to="/work">
-              Explore my work <span>↗</span>
+              Explore my work <span><ArrowIcon /></span>
             </Link>
 
             <Link className="button button-quiet" to="/contact">
@@ -83,7 +84,7 @@ export default function Home() {
 
         <div className="section-end">
           <Link className="text-link" to="/work">
-            View all work <span>↗</span>
+            View all work <span><ArrowIcon /></span>
           </Link>
         </div>
       </section>
@@ -107,7 +108,7 @@ export default function Home() {
             </p>
 
             <Link className="text-link" to="/services">
-              Explore services <span>↗</span>
+              Explore services <span><ArrowIcon /></span>
             </Link>
           </div>
         </div>
@@ -123,7 +124,7 @@ export default function Home() {
         </h2>
 
         <Link className="button button-primary" to="/contact">
-          Start a conversation <span>↗</span>
+          Start a conversation <span><ArrowIcon /></span>
         </Link>
       </section>
     </>

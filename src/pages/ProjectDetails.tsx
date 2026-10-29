@@ -2,7 +2,7 @@
 import { Link, useParams } from 'react-router-dom';
 import { projects } from '../data/projects';
 import NotFound from './NotFound';
-
+import ArrowIcon from '../components/ArrowIcon';
 
 export default function ProjectDetails() {
   const { slug } = useParams();
@@ -103,7 +103,7 @@ export default function ProjectDetails() {
             target="_blank"
             rel="noreferrer"
           >
-            Visit live website ↗
+            Visit live website <ArrowIcon />
           </a>
         )}
 
@@ -114,7 +114,7 @@ export default function ProjectDetails() {
             target="_blank"
             rel="noreferrer"
           >
-            View source code ↗
+            View source code <ArrowIcon />
           </a>
         )}
       </div>
@@ -123,7 +123,7 @@ export default function ProjectDetails() {
         <p className="eyebrow">Keep exploring</p>
 
         <Link className="text-link" to="/work">
-          More projects <span>↗</span>
+          More projects <span><ArrowIcon /></span>
         </Link>
       </div>
     </article>

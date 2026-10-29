@@ -12,7 +12,7 @@ export default function Footer() {
   target="_blank"
   rel="noreferrer"
 >
-  LinkedIn ↗
+  LinkedIn 
 </a>
 
 <a
@@ -20,10 +20,10 @@ export default function Footer() {
   target="_blank"
   rel="noreferrer"
 >
-  GitHub ↗
+  GitHub 
 </a>
 
-        <a href="mailto:gabriel.eremie@yahoo.com">Email ↗</a>
+        <a href="mailto:gabriel.eremie@yahoo.com">Email </a>
       </div>
       <small>© {new Date().getFullYear()} Gabriel Eremie. Built with care.</small>
     </footer>

@@ -1,6 +1,7 @@
 
 import { Link } from 'react-router-dom';
 import portrait from '../assets/photo.jpg';
+import ArrowIcon from '../components/ArrowIcon';
 import SectionHeading from '../components/SectionHeading';
 
 const skillGroups = [
@@ -89,7 +90,7 @@ export default function About() {
             target="_blank"
             rel="noreferrer"
           >
-            View resume <span aria-hidden="true">↗</span>
+            View resume <span aria-hidden="true"><ArrowIcon /></span>
           </a>
         </div>
       </div>
@@ -131,7 +132,7 @@ export default function About() {
         <p>Want to know more about my experience?</p>
 
         <Link className="text-link" to="/contact">
-          Get in touch <span aria-hidden="true">↗</span>
+          Get in touch <span aria-hidden="true"><ArrowIcon /></span>
         </Link>
       </div>
     </section>

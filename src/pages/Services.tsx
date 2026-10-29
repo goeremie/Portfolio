@@ -1,4 +1,4 @@
-
+import ArrowIcon from '../components/ArrowIcon';
 import { Link } from 'react-router-dom';
 import SectionHeading from '../components/SectionHeading';
 
@@ -52,7 +52,7 @@ export default function Services() {
               className="service-symbol"
               aria-hidden="true"
             >
-              ↗
+              <ArrowIcon />
             </span>
           </article>
         ))}
@@ -102,7 +102,7 @@ export default function Services() {
           className="button button-primary"
           to="/contact"
         >
-          Tell me about your project <span>↗</span>
+          Tell me about your project <span><ArrowIcon /></span>
         </Link>
       </div>
     </section>
