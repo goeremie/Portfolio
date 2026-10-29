@@ -1,9 +1,8 @@
+
 import React from "react";
 import AI1 from "./assets/AI1.png";
 import AI2 from "./assets/AI2.png";
-import HH1 from "./assets/HH1.png";
-import HH2 from "./assets/HH2.png";
-import HH3 from "./assets/HH3.png";
+import HH1 from "./assets/HH.jpg";
 
 const Projects: React.FC = () => {
   return (
@@ -74,24 +73,16 @@ const Projects: React.FC = () => {
       <div className="mb-12">
         <h3 className="text-2xl font-bold mb-4">Hire Horizon</h3>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-start">
-          <div className="space-y-4 mb-6">
+          {/* Hire Horizon Screenshot */}
+          <div className="mb-6">
             <img
               src={HH1}
-              alt="Job Tracker Screenshot 1"
-              className="w-full rounded-lg shadow-md"
-            />
-            <img
-              src={HH2}
-              alt="Job Tracker Screenshot 2"
-              className="w-full rounded-lg shadow-md"
-            />
-            <img
-              src={HH3}
-              alt="Job Tracker Screenshot 3"
+              alt="Hire Horizon Screenshot"
               className="w-full rounded-lg shadow-md"
             />
           </div>
 
+          {/* Description Box */}
           <div className="project-card space-y-4 mt-6 md:mt-0 text-white">
             <p className="text-lg">
               Hire Horizon is a mobile app designed to help job seekers manage
