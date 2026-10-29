@@ -1,6 +1,7 @@
 
 import { useEffect, useState } from 'react';
 import { Link, NavLink } from 'react-router-dom';
+import ArrowIcon from './ArrowIcon';
 
 const links = [
   { to: '/work', label: 'Work' },
@@ -78,7 +79,7 @@ export default function Navbar() {
             to="/contact"
             onClick={closeMenu}
           >
-            Let's talk <span aria-hidden="true">↗</span>
+            Let's talk <span aria-hidden="true"><ArrowIcon /></span>
           </Link>
         </div>
       </nav>

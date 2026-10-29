@@ -1251,11 +1251,3 @@ p {
     transition-duration: 0.01ms !important;
   }
 }
-
-/* Keep arrows and symbols from rendering as emoji */
-.button,
-.contact-email,
-a,
-button {
-  font-variant-emoji: text;
-}
