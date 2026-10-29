@@ -4,7 +4,7 @@ export default function Footer() {
   return (
     <footer className="site-footer container-wide">
       <Link className="brand" to="/">GE<span className="brand-period">.</span></Link>
-      <p>Building useful, thoughtful digital experiences.</p>
+      <p>Building useful, thoughtful and digital experiences.</p>
       <div className="footer-links">
         
 <a
