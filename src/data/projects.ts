@@ -1,4 +1,4 @@
-import aiPreview from '../assets/AI1.png';
+import aiPreview from '../assets/AI2.png';
 import hireHorizonPreview from '../assets/HH.jpg';
 import sunbakedPreview from '../assets/SBP1.png';
 
