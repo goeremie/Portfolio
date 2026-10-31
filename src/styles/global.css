@@ -1,6 +1,4 @@
-@import url(
-  'https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap'
-);
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap');
 
 /* -------------------------------------------------------------------------- */
 /* Theme and global styles                                                    */
@@ -19,7 +17,11 @@
   --text: #f4f0e8;
   --muted: #a5a39d;
   --line: rgba(244, 240, 232, 0.14);
-  --accent: #e88a50;
+
+  --accent: #30d5c8;
+  --accent-hover: #55e1d6;
+  --accent-dark: #087f78;
+
   --max: 1200px;
 }
 
@@ -61,6 +63,7 @@ button {
 }
 
 /* Shared content container */
+
 .container-wide {
   width: min(var(--max), calc(100% - 64px));
   margin-inline: auto;
@@ -122,15 +125,13 @@ h1 span,
   border: 1px solid var(--line);
   border-radius: 3px;
   font-size: 0.8rem;
-  transition:
-    background 0.2s,
-    border-color 0.2s;
+  transition: background 0.2s, border-color 0.2s, color 0.2s;
 }
 
 .nav-cta:hover {
   background: var(--accent);
   border-color: var(--accent);
-  color: #17110d;
+  color: var(--bg);
 }
 
 .menu-toggle {
@@ -210,6 +211,7 @@ p {
 }
 
 /* Shared button styles */
+
 .button {
   display: inline-flex;
   justify-content: center;
@@ -223,7 +225,8 @@ p {
   transition:
     transform 0.2s,
     background 0.2s,
-    border-color 0.2s;
+    border-color 0.2s,
+    color 0.2s;
 }
 
 .button:hover {
@@ -232,13 +235,14 @@ p {
 
 .button-primary {
   background: var(--accent);
-  color: #21150e;
+  color: var(--bg);
   border-color: var(--accent);
 }
 
 .button-primary:hover {
-  background: #f1a16d;
-  border-color: #f1a16d;
+  background: var(--accent-hover);
+  border-color: var(--accent-hover);
+  color: var(--bg);
 }
 
 .button-quiet:hover {
@@ -246,6 +250,7 @@ p {
 }
 
 /* Decorative hero monogram and orbit rings */
+
 .hero-aside {
   position: relative;
   min-height: 440px;
@@ -401,6 +406,7 @@ p {
 }
 
 /* Shown when a project image is unavailable */
+
 .image-placeholder {
   position: absolute;
   inset: 0;
@@ -423,7 +429,7 @@ p {
   place-items: center;
   border-radius: 50%;
   background: var(--accent);
-  color: #21150e;
+  color: var(--bg);
   opacity: 0;
   transform: translateY(6px);
   transition: 0.2s;
@@ -460,6 +466,7 @@ p {
 }
 
 /* Text links and hover arrow */
+
 .text-link,
 .back-link {
   display: inline-flex;
@@ -492,7 +499,7 @@ p {
 
 .services-band {
   padding: 90px 0;
-  background: #e9e2d5;
+  background: whitesmoke;
   color: #171613;
 }
 
@@ -517,7 +524,15 @@ p {
 }
 
 .services-band .text-link {
-  border-color: #a54e24;
+  border-color: var(--accent-dark);
+}
+
+.services-band .text-link span {
+  color: var(--accent-dark);
+}
+
+.services-band .text-link:hover {
+  border-color: var(--accent-dark);
 }
 
 .contact-cta {
@@ -535,7 +550,7 @@ p {
 }
 
 /* -------------------------------------------------------------------------- */
-/* Portfolio page and filters                                                */
+/* Portfolio page and filters                                                 */
 /* -------------------------------------------------------------------------- */
 
 .page-section > .section-heading {
@@ -558,6 +573,7 @@ p {
   color: var(--muted);
   font-size: 0.78rem;
   cursor: pointer;
+  transition: background 0.2s, color 0.2s, border-color 0.2s;
 }
 
 .filter-button:hover,
@@ -584,6 +600,10 @@ p {
   margin-bottom: 60px;
   border: 0;
   color: var(--muted);
+}
+
+.back-link:hover {
+  color: var(--accent);
 }
 
 .case-header {
@@ -628,6 +648,7 @@ p {
   object-fit: contain;
   position: static;
 }
+
 .case-content {
   max-width: 950px;
   display: grid;
@@ -880,7 +901,7 @@ p {
   border: 1px solid var(--line);
   border-radius: 3px;
   outline: none;
-  background: #171715;
+  background: var(--panel);
   color: var(--text);
 }
 
@@ -1025,7 +1046,7 @@ p {
     gap: 20px;
     padding: 24px 20px 28px;
     border-bottom: 1px solid var(--line);
-    background: #151513;
+    background: var(--panel);
   }
 
   .nav-links.is-open {
@@ -1241,6 +1262,7 @@ p {
 }
 
 /* Respect users' reduced-motion accessibility preference */
+
 @media (prefers-reduced-motion: reduce) {
   *,
   *::before,
@@ -1252,14 +1274,17 @@ p {
   }
 }
 
-/* Playable game section */
+/* -------------------------------------------------------------------------- */
+/* Playable game section                                                      */
+/* -------------------------------------------------------------------------- */
+
 .game-frame {
   width: 100%;
   aspect-ratio: 16 / 9;
   overflow: hidden;
   border-radius: 16px;
   background: #111;
-  border: 1px solid var(--color-border);
+  border: 1px solid var(--line);
   margin: 2rem 0;
 }
 
@@ -1273,9 +1298,9 @@ p {
 .game-instructions {
   margin: 2rem 0 3rem;
   padding: 2rem;
-  border: 1px solid var(--color-border);
+  border: 1px solid var(--line);
   border-radius: 16px;
-  background: var(--color-surface);
+  background: var(--panel);
 }
 
 .game-instructions h2 {
@@ -1302,7 +1327,10 @@ p {
   }
 }
 
-/* Full-screen 404 page */
+/* -------------------------------------------------------------------------- */
+/* Full-screen 404 page                                                       */
+/* -------------------------------------------------------------------------- */
+
 .not-found {
   position: fixed;
   inset: 0;
@@ -1318,8 +1346,8 @@ p {
   padding: 24px;
   overflow: hidden;
   text-align: center;
-  background: var(--color-bg, #ffffff);
-  color: var(--color-text, #222222);
+  background: var(--bg);
+  color: var(--text);
 }
 
 .not-found p {

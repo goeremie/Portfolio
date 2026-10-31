@@ -63,25 +63,20 @@ export default function About() {
           <p className="eyebrow">My approach</p>
 
           <h2>
-            Good work starts with understanding the people it's for.
+            Great work begins by understanding the people it serves.
           </h2>
 
           <p>
-            I enjoy turning ideas into practical digital experiences
-            by combining frontend development, problem-solving, and
-            user-centered design. With a Bachelor of Science in
-            Computing Science from Thompson Rivers University, I
-            bring a technical foundation to building web applications,
-            Android projects, and responsive websites. I also care
-            about the details that make digital products intuitive,
-            accessible, and enjoyable to use.
+            I relish the chance for exploring how technology, design, and problem-solving come together to create meaningful digital experiences. 
+            As a Computing Science graduate from Thompson Rivers University, I've developed an interest in several areas of technology, 
+            including game development, frontend development, UI/UX design, and SQL database management.
           </p>
-
+          <p>Through academic, personal, and practical projects, I've gained experience building interactive applications, designing user-focused interfaces, 
+            developing websites, and working with data-driven solutions. I'm particularly interested in how engaging gameplay, thoughtful design, and well-structured
+            databases can improve the way people interact with technology.</p>
           <p>
-            Alongside software projects, I'm growing a freelance
-            practice creating websites for small businesses. SunBaked
-            Pastries is the first example of that work, and I'm excited
-            to build more partnerships over time.
+            Alongside my software projects, I'm also developing a freelance practice creating websites for small businesses. SunBaked Pastries is the first example 
+            of that work, and I'm looking forward to expanding my experience through new projects and collaborations.
           </p>
 
           <a

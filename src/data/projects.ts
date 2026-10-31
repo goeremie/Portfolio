@@ -65,6 +65,7 @@ export const projects: Project[] = [
       'Integrated Firebase authentication and data services',
       'Connected the application workflow to AI-assisted quiz generation',
       'Considered accessibility through voice-command interactions',
+      'Note: Due to privacy reasons from Innomergence the source code and website cannot be currently viewed'
     ],
     stack: ['React', 'TypeScript', 'Firebase', 'OpenAI'],
     image: aiPreview,
@@ -104,7 +105,7 @@ export const projects: Project[] = [
     problem:
       'The project explores real-time gameplay, player movement, collision detection, and interactive 3D environments.',
     solution:
-      'Built a playable 3D game with Godot and prepared a browser-based version so visitors can experience it directly from the portfolio.',
+      'Built a playable 3D game with Godot and prepared a browser-based version so visitors can experience it easily.',
     contributions: [
       'Implemented 3D player movement and jumping',
       'Worked with enemy spawning and collision interactions',
@@ -123,30 +124,34 @@ export const projects: Project[] = [
   'Jump on the creeps to squash them and score points.','Note: This game uses keyboard controls and is not currently optimized for touchscreen devices.'],
   },
   {
-    slug: 'dodge-the-creeps-2d',
-    number: '05',
-    title: 'Dodge the Creeps',
-    subtitle: 'A 2D game built with Godot',
-    category: 'Game',
-    year: '2026',
-    summary:
-      'A 2D game project developed with Godot and exported for browser play.',
-    problem:
-      'This project explores the fundamentals of 2D game development and interactive gameplay.',
-    solution:
-      'Created a browser-playable version of the game so visitors can try it directly from the portfolio.',
-    contributions: [
-      'Developed a 2D game using Godot and GDScript',
-      'Prepared a Web export for browser-based gameplay',
-    ],
-    stack: ['Godot', 'GDScript', '2D game development', 'Web export'],
-    image: TwoD,
-    gameUrl: '/games/first2d/index.html',
-    gameInstructions: [
-  '↑ / Up Arrow — Move up',
-  '↓ / Down Arrow — Move down',
-  '← / Left Arrow — Move left',
-  '→ / Right Arrow — Move right',
-  'Avoid the creeps and survive for as long as possible.','Note: This game uses keyboard controls and is not currently optimized for touchscreen devices.'],
-  },
+  slug: 'dodge-the-creeps-2d',
+  number: '05',
+  title: 'Dodge the Creeps',
+  subtitle: 'A 2D arcade game built with Godot',
+  category: 'Game',
+  year: '2026',
+  summary:
+    'A 2D arcade game where players move through the environment, avoid incoming enemies, and survive for as long as possible.',
+  problem:
+    'The project explores the fundamentals of 2D game development, including player movement, enemy spawning, collision detection, and real-time gameplay.',
+  solution:
+    'Built a playable 2D game with Godot and prepared a browser-based version, allowing visitors to experience the gameplay directly on the web.',
+  contributions: [
+    'Implemented 2D player movement and keyboard controls',
+    'Worked with enemy spawning and collision detection',
+    'Developed the gameplay loop and survival mechanics',
+    'Prepared and tested a browser-playable Web export',
+  ],
+  stack: ['Godot', 'GDScript', '2D game development', 'Web export'],
+  image: TwoD,
+  gameUrl: '/games/first2d/index.html',
+  gameInstructions: [
+    '↑ / Up Arrow — Move up',
+    '↓ / Down Arrow — Move down',
+    '← / Left Arrow — Move left',
+    '→ / Right Arrow — Move right',
+    'Avoid the creeps and survive for as long as possible.',
+    'Note: This game uses keyboard controls and is not currently optimized for touchscreen devices.',
+  ],
+},
 ];

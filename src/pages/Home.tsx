@@ -16,17 +16,15 @@ export default function Home() {
           </p>
 
           <h1>
-            I build digital
+            I create digital
             <br />
-            <span>things that matter.</span>
+            <span>constructs that matter.</span>
           </h1>
 
           <p className="hero-description">
-            I'm a Computing Science graduate passionate about frontend
-            development, UI/UX design, and building digital experiences
-            that bring ideas to life. From interactive applications to
-            websites for real businesses, I combine thoughtful design
-            with practical problem-solving.
+            I'm a Computing Science graduate interested in game development, UI/UX design, 
+            frontend engineering, and SQL database administration. I enjoy building interactive experiences, intuitive interfaces,
+             and practical software solutions, from games and applications to business websites. I'm eager to keep learning, contribute to meaningful projects, and grow across these areas of technology.
           </p>
 
           <div className="hero-actions">
