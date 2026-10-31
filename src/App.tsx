@@ -1,5 +1,4 @@
-
-import { Route, Routes } from 'react-router-dom';
+import { Route, Routes, useLocation } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Home from './pages/Home';
@@ -11,9 +10,24 @@ import Contact from './pages/Contact';
 import NotFound from './pages/NotFound';
 
 export default function App() {
+  const location = useLocation();
+
+  const validPath =
+    location.pathname === '/' ||
+    location.pathname === '/work' ||
+    location.pathname.startsWith('/work/') ||
+    location.pathname === '/about' ||
+    location.pathname === '/services' ||
+    location.pathname === '/contact';
+
+  if (!validPath) {
+    return <NotFound />;
+  }
+
   return (
     <div className="site-shell">
       <Navbar />
+
       <main id="main-content">
         <Routes>
           <Route path="/" element={<Home />} />
@@ -22,9 +36,9 @@ export default function App() {
           <Route path="/about" element={<About />} />
           <Route path="/services" element={<Services />} />
           <Route path="/contact" element={<Contact />} />
-          <Route path="*" element={<NotFound />} />
         </Routes>
       </main>
+
       <Footer />
     </div>
   );

@@ -32,31 +32,51 @@ export default function ProjectDetails() {
         <p className="case-summary">{project.summary}</p>
       </header>
 
-      
-<div className="case-image">
-  <img
-    src={project.image}
-    alt={`${project.title} preview`}
-    onError={(event) => {
-      event.currentTarget.style.display = 'none';
+            {project.gameUrl ? (
+        <div className="game-frame">
+          <iframe
+            src={project.gameUrl}
+            title={`${project.title} playable game`}
+            allow="autoplay; fullscreen; gamepad"
+            allowFullScreen
+          />
+        </div>
+      ) : (
+        <div className="case-image">
+          <img
+            src={project.image}
+            alt={`${project.title} preview`}
+            onError={(event) => {
+              event.currentTarget.style.display = 'none';
 
-      const placeholder =
-        event.currentTarget.parentElement?.querySelector(
-          '.image-placeholder'
-        );
+              const placeholder =
+                event.currentTarget.parentElement?.querySelector(
+                  '.image-placeholder'
+                );
 
-      if (placeholder instanceof HTMLElement) {
-        placeholder.style.display = 'grid';
-      }
-    }}
-  />
+              if (placeholder instanceof HTMLElement) {
+                placeholder.style.display = 'grid';
+              }
+            }}
+          />
 
-  <span className="image-placeholder">
-    Add a high-quality project screenshot here
-  </span>
-</div>
+          <span className="image-placeholder">
+            Add a high-quality project screenshot here
+          </span>
+        </div>
+      )}
+            {project.gameUrl && project.gameInstructions && (
+        <section className="game-instructions">
+          <p className="eyebrow">How to play</p>
+          <h2>Game controls</h2>
 
-
+          <ul>
+            {project.gameInstructions.map((instruction) => (
+              <li key={instruction}>{instruction}</li>
+            ))}
+          </ul>
+        </section>
+      )}
       <div className="case-content">
         <section>
           <p className="eyebrow">01 / The challenge</p>

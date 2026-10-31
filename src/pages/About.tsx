@@ -1,6 +1,6 @@
 
 import { Link } from 'react-router-dom';
-import portrait from '../assets/photo.jpg';
+import portrait from '../assets/gabe.png';
 import ArrowIcon from '../components/ArrowIcon';
 import SectionHeading from '../components/SectionHeading';
 
